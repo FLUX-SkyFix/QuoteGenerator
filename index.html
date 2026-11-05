@@ -1014,7 +1014,7 @@ document.getElementById('btnPDF').addEventListener('click', function() {
       lineItems: keys.map(function(pn) { return { part_number: pn, qty: quote[pn].qty }; })
     };
     var encoded = btoa(encodeURIComponent(JSON.stringify(quotePayload)));
-    var responseURL = 'https://michaelpineda98.github.io/QuoteGeneration/respond.html?q=' + encoded;
+    var responseURL = 'https://flux-skyfix.github.io/QuoteGenerator/respond.html?q=' + encoded;
 
     // ACTION REQUIRED section — at the top
     fill(232,240,248); doc.rect(M, y, CW, 10, 'F');
